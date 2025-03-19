@@ -106,5 +106,31 @@ where isbn < 20;
 select * from tb_livro
 where preco > 300;
 
+-- comando de DDL 
+-- adicionar campo
+select * from tb_livro;
+
+alter table tb_livro
+add nota int;
+
+-- modificar o campo nota para char(50) 
+alter table tb_livro
+modify column nota char(50);
+
+-- excluir o campo 
+-- drop 
+alter table tb_livro
+drop column nota;
+
+-- criar tabela tb_teste
+create table tb_teste
+(cd_teste int not null primary key,
+teste char(30));
+
+-- excluir a tabela tb_teste
+-- drop
+drop table tb_teste;
+
+
 
 
